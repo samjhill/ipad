@@ -1,0 +1,123 @@
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+* {
+	margin: 0; padding: 0;
+}
+
+body {
+	background: #333333;
+	font-family: sans-serif;
+	overflow: hidden !important;
+	height: 100% !important;
+}
+
+h1,h2,h3{
+	font-family: OpenSans-Bold;
+}
+
+p{
+	margin-top: 1em;
+	margin-bottom: .5em;
+	font-family: OpenSans-Regular;
+}
+
+.flex-direction-nav{
+  visibility: hidden;	
+}
+
+#slider {
+	width: 100%;
+	height: 100%;
+}
+
+#container {
+	width: 100%;
+	height: 800px;
+	background-image: url(../images/ipad-safari.png);
+	background-position-x: 50%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 10%;
+}
+
+#screen{
+	position: relative;
+	height: 581px;
+	top: 127px;
+	width: 481px;
+	overflow: hidden;
+	left: 3px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Body Style */
+#text-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	font-size: 1.75em;
+}
+
+.section{
+	width: 100%;
+	padding: .5em;
+	height: auto !important;
+	background: white;
+	margin-bottom: 40em;
+	box-shadow: 10px 10px 5px rgba(49, 48, 48, 0.25);
+}
+
+.imgsContainer{
+	width: 100%;
+}
+
+.skrollable{
+	z-index: 0;
+}
+
+.flexslider{
+	margin: 0;
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Desktop Styles */
+@media only screen 
+and (min-width : 1224px) {
+	body{
+		height: 3500px !important;
+	}
+	
+	.section{
+		height: 25% !important;
+		margin-bottom: 0;
+	}
+	
+	#screen{
+		left: 4px;	
+	}
+	
+	#text-container{
+		padding: 2em;
+		width: 45%;
+		float:left;
+	}
+	
+	#container{
+		z-index: 100;
+		left: 25%;
+	}
+	
+}

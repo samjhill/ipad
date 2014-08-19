@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<meta name="description" content="description">
+ 
+<title>Scrolling iPad Slideshow Demo</title>
+ 
+<link rel="stylesheet" media="screen" href="vendor/fullPage/jquery.fullPage.css" />
+<link href="vendor/skrollr/examples/fixed-positioning.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="vendor/flexslider/flexslider.css">
+<link rel="stylesheet" media="screen" href="css/style.css" />  
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="vendor/flexslider/jquery.flexslider-min.js" type="text/javascript"></script>
+<script src="vendor/nicescroll/jquery.nicescroll.min.js" type="text/javascript"></script>
+<script src="vendor/fullPage/jquery.fullPage.js" type="text/javascript"></script>
+<script type="text/javascript" src="vendor/skrollr/src/skrollr.js"></script>
+                                                                     
+<script type="text/javascript">
+        
+$(window).load(function() {
+	$('.flexslider').flexslider({
+                slideshow: false,
+                randomize: false,
+                controlNav: false,
+                directionNav: true,
+                itemMargin: 0,
+                startAt: 0, 
+                animation: "fade"
+              });
+});
+
+
+</script>
+ 
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+ 
+</head>
+ 
+<body>
+    <div class="imgsContainer">
+             <div id="container">
+                <div id="screen">
+                    <div id="slider" class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img id="blank-slide" src="images/blank-slide.png" />
+                                </li>
+                                <li>
+                                    <img id="product1" src="images/slide-a.png" />
+                                </li>
+                                <li>
+                                    <img id="product2" src="images/slide-b.png" />
+                                </li>
+                                <li> <!-- change image -->
+                                    <img id="product3" src="images/slide-c.png" />
+                                </li>
+                                <li> <!-- change image -->
+                                    <img id="product4" src="images/slide-c.png" />
+                                </li>
+                                <li> <!-- change image -->
+                                    <img id=product5" src="images/slide-c.png" />
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div id="fullpage" data-0="top:0%;" data-5000="top:-100%;">
+        
+        
+        <div class="section" id="product1-section">
+            <div class="wrap">
+                <div id="text-container">
+                    <div id="title-text" class="text-header">
+                        <h1 id="title-inner">OUR PRODUCTS</h1>
+                    </div>
+                    
+                    <div class="box">
+                        <div id="text-body" class="text-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem libero voluptas molestias quis quod sint veniam perferendis ratione voluptates quia odit earum necessitatibus architecto numquam iure eligendi cum qui impedit.
+                            </p>
+                            
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam enim sit assumenda animi maxime sed similique quaerat. Voluptas assumenda omnis nemo distinctio quos ea atque quod perspiciatis officia labore dolore.</p>
+                            
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="product2-section">
+                    <div class="wrap">
+                <div id="text-container">
+                    <div id="title-text" class="text-header">
+                        <h1 id="title-inner">PRODUCT ONE</h1>
+                    </div>
+                    
+                    <div class="box">
+                        <div id="text-body" class="text-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam nostrum laborum reiciendis ipsa porro voluptates optio libero ex laboriosam nesciunt possimus molestiae aspernatur error perspiciatis voluptas aliquid nobis molestias at.
+                            </p>
+                            
+                            <h3>Online Presence</h3>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur alias animi mollitia inventore ipsam repudiandae fuga facere sit reprehenderit maiores repellat error sint saepe amet dolore non vitae modi et..</p>
+                            
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section" id="product3-section">
+                    <div class="wrap">
+                <div id="text-container">
+                    <div id="title-text" class="text-header">
+                        <h1 id="title-inner">PRODUCT TWO</h1>
+                    </div>
+                    
+                    <div class="box">
+                        <div id="text-body" class="text-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quas dolores corporis nihil aperiam nisi sit quis obcaecati quos velit est facilis quisquam consectetur soluta atque accusamus deserunt officiis autem.
+                            </p>
+                            
+                            <h3>Mobile Friendly Ordering</h3>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem deleniti praesentium ea expedita ab eaque culpa dolor officia obcaecati. Perspiciatis consectetur veritatis facere tenetur iure perferendis soluta nam in necessitatibus!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="section" id="product4-section">
+                    <div class="wrap">
+                <div id="text-container">
+                    <div id="title-text" class="text-header">
+                        <h1 id="title-inner">PRODUCT THREE</h1>
+                    </div>
+                    
+                    <div class="box">
+                        <div id="text-body" class="text-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos voluptate debitis totam repellendus cum nulla tempora minima consequatur excepturi voluptatem architecto assumenda rem sequi molestias suscipit esse harum doloribus saepe.
+                            </p>
+                            
+                            <h3>User Friendly Ordering</h3>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus blanditiis illum qui nesciunt illo excepturi architecto voluptas itaque totam culpa eligendi nostrum a officia cupiditate harum perferendis provident quod incidunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="section" id="product5-section">
+                    <div class="wrap">
+                <div id="text-container">
+                    <div id="title-text" class="text-header">
+                        <h1 id="title-inner">PRODUCT FOUR</h1>
+                    </div>
+                    
+                    <div class="box">
+                        <div id="text-body" class="text-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque deserunt repellendus quia ad corporis dolor dolores dolorum perspiciatis nisi ipsam magnam adipisci ducimus labore beatae magni non aliquid. Reiciendis accusamus.
+                            </p>
+                            
+                            <h3>Great for multi-unit operators</h3>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore voluptates tenetur itaque perspiciatis laboriosam incidunt doloremque rerum assumenda laudantium molestias quos dolore quaerat cupiditate repellat beatae maxime veritatis! Nihil rerum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     <script type="text/javascript">
+		$(document).ready(function() {
+                        $("html").niceScroll();
+                        $("html").getNiceScroll().hide();
+                        
+			$('#fullpage').fullpage({
+                                'autoScrolling' : false,
+				'verticalCentered': false,
+				'css3': true,
+				'navigation': false,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['Products', 'Catering', 'Take Out', 'Floor Stock', 'Web Starter'],			
+				'onLeave': function(index, nextIndex, direction){
+					if (index == 3 && direction == 'down'){
+						$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+					}
+					else if(index == 3 && direction == 'up'){
+						$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+					}
+			
+					$('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+					$('#staticImg').toggleClass('moveDown', index == 3 && direction == 'down');
+				}
+			});
+                        
+                        //JS function hooks to advance the iPad's slide on scroll
+                        skrollr.init({
+                              render: function(data) {
+                                //get active section
+                                var activeSection = $('div.active').attr('id');
+                                
+                                try{
+                                    //set active image
+                                    if (activeSection == 'product1-section') {
+                                        $('#slider').data('flexslider').flexAnimate(1);
+                                    }
+                                    if (activeSection == 'product2-section') {
+                                        $('#slider').data('flexslider').flexAnimate(2);
+                                    }
+                                    if (activeSection == 'product3-section') {
+                                        $('#slider').data('flexslider').flexAnimate(3);
+                                    }
+                                    if (activeSection == 'product4-section') {
+                                        $('#slider').data('flexslider').flexAnimate(1);
+                                    }
+                                    if (activeSection == 'product5-section') {
+                                        $('#slider').data('flexslider').flexAnimate(2);
+                                    }
+                                  
+                                }
+                                catch( e ){ console.log(e); }
+                                }});
+                            
+		});
+	</script>
+</body>
+</html>
